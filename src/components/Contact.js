@@ -7,16 +7,16 @@ const Contact = () => {
                 <h2 style={{ color: 'rgba(77, 181, 255, 1)' }}>Contact Me</h2>
                 <h5 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Get In Touch</h5>
             </div>
-            <div className="row">
-                <div className="col-lg-6">
+            <div className="row g-3">
+                <div className="col-lg-6 border p-4">
                     <form >
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button type="submit">Submit</button>
+                        <button type="submit" className='btn' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Submit</button>
                     </form>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 border p-4">
                     <div class="card text-bg-primary mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Primary card title</h5>
