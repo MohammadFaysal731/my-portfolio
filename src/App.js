@@ -11,12 +11,13 @@ import Skill from "./components/Skill";
 import Service from "./components/Service";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
+import Footer from './components/Footer';
 function App() {
   useEffect(() => {
     AOS.init();
   }, [])
   return (
-    <div className="App">
+    <div className="" style={{ backgroundColor: '#0A0826', color: 'white' }}>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/project' element={<Project></Project>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

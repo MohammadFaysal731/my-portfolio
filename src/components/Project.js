@@ -2,9 +2,9 @@ import React from 'react';
 
 const Project = () => {
     return (
-        <div>
+        <section style={{ backgroundColor: '#0A0826', color: 'white' }}>
             <h1>projects</h1>
-        </div>
+        </section>
     );
 };
 
