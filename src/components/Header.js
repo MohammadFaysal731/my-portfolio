@@ -1,23 +1,26 @@
 import React from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { SiChainlink } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 const Header = () => {
-    return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home"><SiChainlink />Mohammad Faysal<SiChainlink /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="mx-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
 
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+    return (
+
+        <Navbar collapseOnSelect expand="lg" sticky="top" style={{ backgroundColor: '#0A0826' }} variant="dark" className=''>
+            <Navbar.Brand to="#home"><SiChainlink />Mohammad Faysal<SiChainlink /></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mx-auto text-justify">
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/about">About</Nav.Link>
+                    <Nav.Link as={Link} to="/skill">Skill</Nav.Link>
+                    <Nav.Link as={Link} to="/service">Service</Nav.Link>
+                    <Nav.Link as={Link} to="/projects">Project</Nav.Link>
+                    <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+
+        </Navbar>
     );
 };
 
