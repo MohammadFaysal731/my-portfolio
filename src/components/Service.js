@@ -43,7 +43,7 @@ const Services = () => {
                     services.map(({ icon, name, description }, index) => <div key={index} class="col">
                         <div class="card">
                             <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
-                                <h5 class="card-title">{name} {icon}</h5>
+                                <h5 class="card-title" style={{ color: 'rgba(77, 181, 255, 1)' }}>{name} {icon}</h5>
                                 <p class="card-text">{description}</p>
                             </div>
                         </div>
