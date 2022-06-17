@@ -3,16 +3,22 @@ import { Link } from 'react-router-dom';
 import ME from '../images/my-image/me.png'
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 const Banner = () => {
+    const { text } = useTypewriter({
+        words: ['Front End Developer', 'Web Developer', 'React Developer', 'Meran Stack Developer'],
+        loop: {},
+    })
     return (
         <section className='p-5'>
             <div className="text-center pt-3" style={{ color: 'rgba(77, 181, 255, 1)' }}>
                 <h5 >Hello I'm</h5>
-                <h2>Mohammad Faysal</h2>
-                <h5 className='mb-3'>Front-end-developer</h5>
+                <h2 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Mohammad Faysal</h2>
+                <h5 className='mb-3' style={{ color: 'rgba(77, 181, 255, 1)' }}> {text} <Cursor /></h5>
+            </div>
+            <div className="text-center pt-3">
                 <Link to='/contact' className='btn rounded me-2' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Contact Me</Link>
                 <a href='https://drive.google.com/file/d/1oMrNYXOR1dGSrVBHNwEP7_3BzrfAH1GC/view?usp=sharing' download target='_blank' className='btn  rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Download Resume</a>
-
             </div>
             <div className="d-flex justify-content-center mt-3 ">
                 <img src={ME} alt="" className=' rounded-circle' style={{ width: '500px', height: '500px', border: '1px solid rgba(77, 181, 255, 1)' }} />
