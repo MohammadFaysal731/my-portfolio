@@ -13,7 +13,7 @@ const Header = () => {
                     <Nav className="mx-auto text-justify">
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
-                        <Nav.Link as={Link} to="/skill">Skill</Nav.Link>
+                        <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
                         <Nav.Link as={Link} to="/service">Service</Nav.Link>
                         <Nav.Link as={Link} to="/project">Project</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>

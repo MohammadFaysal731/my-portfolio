@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
-import Skill from "./components/Skill";
+import Skills from "./components/Skills";
 import Service from "./components/Service";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
@@ -17,12 +17,12 @@ function App() {
     AOS.init();
   }, [])
   return (
-    <div className="" style={{ backgroundColor: '#0A0826', color: 'white' }}>
+    <div className="" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-        <Route path='/skill' element={<Skill></Skill>}></Route>
+        <Route path='/skills' element={<Skills></Skills>}></Route>
         <Route path='/service' element={<Service></Service>}></Route>
         <Route path='/project' element={<Project></Project>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>

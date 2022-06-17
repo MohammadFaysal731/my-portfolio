@@ -29,8 +29,8 @@ const Project = () => {
             image2: Strong2,
             image3: Strong3,
             name: 'STRONG GYM',
-            github: <a href="https://github.com/MohammadFaysal731/independent-service-provider-a10" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://independent-service-prov-f1a49.web.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/independent-service-provider-a10" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://independent-service-prov-f1a49.web.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye></FaRegEye></a>,
         },
         {
             id: 2,
@@ -38,8 +38,8 @@ const Project = () => {
             image2: Cap2,
             image3: Cap3,
             name: 'Cap Collection',
-            github: <a href="https://github.com/MohammadFaysal731/cap-calactions-a8" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://cap-collection.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/cap-calactions-a8" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://cap-collection.netlify.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye></FaRegEye></a>,
         },
         {
             id: 3,
@@ -47,8 +47,8 @@ const Project = () => {
             image2: Phone2,
             image3: Phone3,
             name: 'Pic Your Phone',
-            github: <a href="https://github.com/MohammadFaysal731/pick-your-phone-a6" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://pick-your-phone-on-you-buzzet.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/pick-your-phone-a6" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://pick-your-phone-on-you-buzzet.netlify.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye></FaRegEye></a>,
         },
         {
             id: 4,
@@ -56,8 +56,8 @@ const Project = () => {
             image2: Calculet2,
             image3: Calculet3,
             name: 'Calculate My Monthly Income',
-            github: <a href="https://github.com/MohammadFaysal731/calculalte-my-monthly-income-a5" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://calculate-my-monthly-income.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/calculalte-my-monthly-income-a5" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://calculate-my-monthly-income.netlify.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye></FaRegEye></a>,
         },
         {
             id: 5,
@@ -65,8 +65,8 @@ const Project = () => {
             image2: Convention2,
             image3: Convention3,
             name: 'Convention Center',
-            github: <a href="https://github.com/MohammadFaysal731/convention-center-a3" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://pedantic-wozniak-894080.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/convention-center-a3" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://pedantic-wozniak-894080.netlify.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye></FaRegEye></a>,
         },
         {
             id: 6,
@@ -74,8 +74,8 @@ const Project = () => {
             image2: Influencer2,
             image3: Influencer3,
             name: 'Influencer Products',
-            github: <a href="https://github.com/MohammadFaysal731/influencer-products-a2" target="_blank"><BsGithub className='icon'></BsGithub></a>,
-            live: <a href="https://influncerproducts-vainla-css.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+            github: <a href="https://github.com/MohammadFaysal731/influencer-products-a2" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><BsGithub></BsGithub></a>,
+            live: <a href="https://influncerproducts-vainla-css.netlify.app/" target="_blank" style={{ color: 'rgba(255, 255, 255, 0.6)' }}><FaRegEye style={{ color: 'rgba(77, 181, 255, 1)' }}></FaRegEye></a>,
 
         },
     ]
@@ -108,11 +108,11 @@ const Project = () => {
                                     </div>
                                 </div>
                                 <h5 class="card-title" style={{ color: 'rgba(77, 181, 255, 1)' }}>{name}</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <p>Github{github}</p>
-                                    <p>Live{live}</p>
-                                    <Link to='/' className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</Link >
+                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Github{github}</p>
+                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Live{live}</p>
+                                    <Link to='/' className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</Link >
                                 </div>
                             </div>
                         </div>

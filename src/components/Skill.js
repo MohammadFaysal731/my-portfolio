@@ -5,7 +5,13 @@ import { TbBrandJavascript, TbBrandTailwind } from 'react-icons/tb'
 import { SiBootstrap, SiMongodb, SiExpress } from 'react-icons/si'
 import { FaReacteurope } from 'react-icons/fa'
 import { DiNodejs } from 'react-icons/di'
+import { useNavigate } from 'react-router-dom';
 const Skill = () => {
+    const navigate = useNavigate()
+
+    const handelSkills = () => {
+        navigate('/skills')
+    }
 
     const frontEnd = [
         {
@@ -54,7 +60,6 @@ const Skill = () => {
             icon: <SiMongodb></SiMongodb>,
             name: 'Mongodb',
             detail: 'Intermediate',
-            service: 'faysla'
         }
 
     ]
@@ -68,7 +73,7 @@ const Skill = () => {
             <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4" >
                 <div class="col">
                     <div class="card">
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }} >
+                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} >
                             <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Frontend Development</h5>
                             <div className="row">
                                 {
@@ -83,13 +88,13 @@ const Skill = () => {
                                 }
                             </div>
 
-                            <button className=' rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>See More</button>
+                            <button onClick={handelSkills} className=' rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>See More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
+                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
                             <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Backend Development</h5>
                             <div className="row">
                                 {
