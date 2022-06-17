@@ -12,7 +12,7 @@ const Banner = () => {
                 <a href='https://drive.google.com/file/d/1oMrNYXOR1dGSrVBHNwEP7_3BzrfAH1GC/view?usp=sharing' download target='_blank' className='btn  rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Download Resume</a>
             </div>
             <div className="d-flex justify-content-center mt-3 ">
-                <img src={ME} alt="" className='border rounded-circle' style={{ width: '500px', height: '500px' }} />
+                <img src={ME} alt="" className=' rounded-circle' style={{ width: '500px', height: '500px', border: '1px solid rgba(77, 181, 255, 1)' }} />
             </div>
         </section >
     );

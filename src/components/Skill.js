@@ -63,17 +63,17 @@ const Skill = () => {
         <section className='container pt-5'>
             <div className="text-center p-3">
                 <h2 style={{ color: 'rgba(77, 181, 255, 1)' }}>My Skills</h2>
-                <h5 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>White Skill I Have</h5>
+                <h5 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>What Skill I Have</h5>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4" >
                 <div class="col">
                     <div class="card">
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
+                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }} >
                             <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Frontend Development</h5>
-                            <div className="">
+                            <div className="row">
                                 {
-                                    frontEnd.map(({ icon, name, detail }, index) => <article key={index} className="d-flex justify-content-center align-items-center m-3 user-select-none" style={{ border: '1px solid rgba(77, 181, 255, 1)', whiteSpace: ' nowrap', }}>
-                                        <div className="d-flex flex-column w-25 rounded-5 ">
+                                    frontEnd.map(({ icon, name, detail }, index) => <article key={index} className="m-3 user-select-none " style={{ border: '1px solid rgba(77, 181, 255, 1)', borderRadius: '10px', whiteSpace: ' nowrap', width: 'fit-content' }}>
+                                        <div className="p-3">
                                             <h1>{icon}</h1>
                                             <p>{name}</p>
                                             <p>{detail}</p>
@@ -82,23 +82,27 @@ const Skill = () => {
                                     )
                                 }
                             </div>
+
                             <button className=' rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>See More</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" >
+                    <div class="card">
                         <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
                             <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Backend Development</h5>
-                            {
-                                backend.map(({ icon, name, detail }, index) => <article key={index} className='d-flex justify-content-center align-items-center m-3 user-select-none' style={{ border: '1px solid rgba(77, 181, 255, 1)', whiteSpace: ' nowrap' }}>
-                                    <div className="d-flex flex-column w-25 rounded">
-                                        <h1>{icon}</h1>
-                                        <p>{name}</p>
-                                        <p>{detail}</p>
-                                    </div>
-                                </article>)
-                            }
+                            <div className="row">
+                                {
+                                    backend.map(({ icon, name, detail }, index) => <article key={index} className=' m-3 user-select-none' style={{ border: '1px solid rgba(77, 181, 255, 1)', borderRadius: '10px', whiteSpace: ' nowrap', width: 'fit-content' }}>
+                                        <div className="p-3">
+                                            <h1>{icon}</h1>
+                                            <p>{name}</p>
+                                            <p>{detail}</p>
+                                        </div>
+                                    </article>)
+                                }
+                            </div>
+
                         </div>
                     </div>
                 </div>

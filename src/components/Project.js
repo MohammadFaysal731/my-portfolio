@@ -1,8 +1,84 @@
 import React from 'react';
-import me from '../images/projects-image/cap-with-selected.png'
-import me1 from '../images/projects-image/oppo.png'
-import me2 from '../images/projects-image/calculet-image-with-incom.png'
+import Strong1 from '../images/projects-image/strong-gyem-home.png'
+import Strong2 from '../images/projects-image/strong-gym-aboute.png'
+import Strong3 from '../images/projects-image/strong-gym-login.png'
+import Cap1 from '../images/projects-image/cap-collection.png'
+import Cap2 from '../images/projects-image/cap-with-selected.png'
+import Cap3 from '../images/projects-image/selected-cap.png'
+import Phone1 from '../images/projects-image/iphone.png'
+import Phone2 from '../images/projects-image/samsung.png'
+import Phone3 from '../images/projects-image/oppo.png'
+import Calculet1 from '../images/projects-image/calculet-image-with-incom.png'
+import Calculet2 from '../images/projects-image/calculet-image.png'
+import Calculet3 from '../images/projects-image/calculet-income.png'
+import Convention1 from '../images/projects-image/convention-home.png'
+import Convention2 from '../images/projects-image/convention-package.png'
+import Convention3 from '../images/projects-image/convention-asked.png'
+import Influencer1 from '../images/projects-image/influencer-banner.png'
+import Influencer2 from '../images/projects-image/influencer-products.png'
+import Influencer3 from '../images/projects-image/influencer.png'
+
+import { FaRegEye } from 'react-icons/fa'
+import { BsGithub } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 const Project = () => {
+    const projects = [
+        {
+            id: 1,
+            image1: Strong1,
+            image2: Strong2,
+            image3: Strong3,
+            name: 'STRONG GYM',
+            github: <a href="https://github.com/MohammadFaysal731/independent-service-provider-a10" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://independent-service-prov-f1a49.web.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+        },
+        {
+            id: 2,
+            image1: Cap1,
+            image2: Cap2,
+            image3: Cap3,
+            name: 'Cap Collection',
+            github: <a href="https://github.com/MohammadFaysal731/cap-calactions-a8" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://cap-collection.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+        },
+        {
+            id: 3,
+            image1: Phone1,
+            image2: Phone2,
+            image3: Phone3,
+            name: 'Pic Your Phone',
+            github: <a href="https://github.com/MohammadFaysal731/pick-your-phone-a6" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://pick-your-phone-on-you-buzzet.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+        },
+        {
+            id: 4,
+            image1: Calculet1,
+            image2: Calculet2,
+            image3: Calculet3,
+            name: 'Calculate My Monthly Income',
+            github: <a href="https://github.com/MohammadFaysal731/calculalte-my-monthly-income-a5" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://calculate-my-monthly-income.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+        },
+        {
+            id: 5,
+            image1: Convention1,
+            image2: Convention2,
+            image3: Convention3,
+            name: 'Convention Center',
+            github: <a href="https://github.com/MohammadFaysal731/convention-center-a3" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://pedantic-wozniak-894080.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+        },
+        {
+            id: 6,
+            image1: Influencer1,
+            image2: Influencer2,
+            image3: Influencer3,
+            name: 'Influencer Products',
+            github: <a href="https://github.com/MohammadFaysal731/influencer-products-a2" target="_blank"><BsGithub className='icon'></BsGithub></a>,
+            live: <a href="https://influncerproducts-vainla-css.netlify.app/" target="_blank"><FaRegEye className='icon'></FaRegEye></a>,
+
+        },
+    ]
     return (
 
 
@@ -10,137 +86,42 @@ const Project = () => {
 
         <section className='container pt-5'>
             <div className="text-center p-3">
-                <h2 style={{ color: 'rgba(77, 181, 255, 1)' }}>My Skill</h2>
-                <h5 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Get To Know</h5>
+                <h2 style={{ color: 'rgba(77, 181, 255, 1)' }}>My Projects</h2>
+                <h5 style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Recent Work</h5>
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4" >
-                <div class="col">
-                    <div class="card">
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
-                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src={me} class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src={me1} class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src={me2} class="d-block w-100" alt="..." />
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div className="">
-                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="..." />
+                {
+                    projects.map(({ id, image1, image2, image3, name, github, live }) => <div key={id} class="col">
+                        <div class="card">
+                            <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src={image1} class="d-block w-100" alt="..." style={{ width: '500px', height: '500px' }} />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src={image2} class="d-block w-100" alt="..." style={{ width: '500px', height: '500px' }} />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src={image3} class="d-block w-100" alt="..." style={{ width: '500px', height: '500px' }} />
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <h5 class="card-title" style={{ color: 'rgba(77, 181, 255, 1)' }}>{name}</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <p>Github{github}</p>
+                                    <p>Live{live}</p>
+                                    <Link to='/' className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'white', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</Link >
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
+
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div className="">
-                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div className="">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="..." class="d-block w-100" alt="..." />
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
+
+                    )
+                }
+
             </div>
         </section >
     );
