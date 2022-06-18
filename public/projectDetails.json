@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "name": "STRONG GYM",
+        "image1":"https://i.ibb.co/n6jBwxD/strong-gyem-home.png",
+        "image2":"https://i.ibb.co/q0dsQYW/strong-gym-aboute.png",
+        "image3":"https://i.ibb.co/Tg2cvHC/strong-gym-login.png",
+        "github":"https://github.com/MohammadFaysal731/independent-service-provider-a10",
+        "live":"https://independent-service-prov-f1a49.web.app/",
+        "technology": "> React > Firebase > React-Firebase-Hooks  > React-hook-form > JavaScript > React-toastify >React icons",
+        "framework":"> React-Bootstrap",
+        "features":""
+    },
+    {
+        "id":2,
+        "name": "Cap Collection",
+        "image1":"https://i.ibb.co/jHVQbXC/cap-collection.png",
+       "image2":"https://i.ibb.co/fdmyg9H/cap-with-selected.png",
+        "image3":"https://i.ibb.co/2jbLjfh/selected-cap.png",
+        "github":"https://github.com/MohammadFaysal731/cap-calactions-a8",
+        "live":"https://cap-collection.netlify.app/" ,
+        "technology": "> React > React icons",
+        "framework": "HTML > CSS > JavaScript",
+        "features":""
+    },
+    {
+        "id":3,
+        "name":"Pic Your Phone",
+        "image1":"https://i.ibb.co/nj9y1Jg/iphone.png",
+       "image2":"https://i.ibb.co/m4LPRmd/samsung.png",
+        "image3":"https://i.ibb.co/3ffjYfg/oppo.png",
+        "github":"https://github.com/MohammadFaysal731/pick-your-phone-a6",
+        "live":"https://pick-your-phone-on-you-buzzet.netlify.app/",
+        "technology":"> HTML > JavaScript > API Call",
+        "framework":"> Bootstrap",
+        "features":""
+    },
+    {
+        "id":4,
+        "name":"Calculate My Monthly Income",
+        "image1":"https://i.ibb.co/gySn844/calculet-image-with-incom.png",
+       "image2":"https://i.ibb.co/jhfgMZJ/calculet-image.png",
+        "image3":"https://i.ibb.co/N2kgFjg/calculet-income.png",
+        "github":"https://github.com/MohammadFaysal731/calculalte-my-monthly-income-a5",
+        "live":"https://calculate-my-monthly-income.netlify.app/",
+        "technology":"> HTML > CSS > JavaScript",
+        "framework":"> Bootstrap",
+        "features":""
+    },
+    {
+        "id":5,
+        "name":"Convention Center",
+        "image1":"https://i.ibb.co/XVPkF2M/convention-home.png",
+       "image2":"https://i.ibb.co/XyjFrbr/convention-package.png",
+        "image3":"https://i.ibb.co/5rZPj71/convention-asked.png",
+        "github":"https://github.com/MohammadFaysal731/convention-center-a3",
+        "live":"https://pedantic-wozniak-894080.netlify.app/",
+        "technology":"> HTML > FontAwesome",
+        "framework": "> Bootstrap",
+        "features":""
+    },
+    {
+        "id":6,
+        "name":"Influencer Products",
+        "image1":"https://i.ibb.co/hdXcKvK/influencer-banner.png",
+       "image2":"https://i.ibb.co/BfDVvJ3/influencer-products.png",
+        "image3":"https://i.ibb.co/YTVcyyJ/influencer.png",
+        "github":"https://github.com/MohammadFaysal731/influencer-products-a2",
+        "live":"https://influncerproducts-vainla-css.netlify.app/",
+        "technology":"> HTML > CSS > FontAwesome",
+        "framework":"> ",
+        "features":""
+
+    }
+]

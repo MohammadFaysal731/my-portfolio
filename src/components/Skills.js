@@ -95,10 +95,29 @@ const Skills = () => {
         }
     ]
     return (
-        <section className='container' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+        <section className='container pt-3' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+            <div className="text-center p-3">
+                <h2
+                    data-aos="fade-down"
+                    data-aos-delay="150"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    style={{ color: 'rgba(77, 181, 255, 1)' }}>My Skills</h2>
+                <h5
+                    data-aos="fade-down"
+                    data-aos-delay="1000"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-out"
+                    style={{ color: 'rgba(255, 255, 255, 0.6)' }}>What Skill I Have</h5>
+            </div>
             <div className="row">
                 {
-                    skills.map(({ icon, name, detail }) => <article className="m-3 user-select-none " style={{ border: '1px solid rgba(77, 181, 255, 1)', borderRadius: '10px', whiteSpace: ' nowrap', width: 'fit-content' }}>
+                    skills.map(({ icon, name, detail }) => <article
+                        data-aos="flip-down"
+                        data-aos-delay="1500"
+                        data-aos-duration="2500"
+                        data-aos-easing="ease-in-out"
+                        className="m-3 user-select-none " style={{ border: '1px solid rgba(77, 181, 255, 1)', borderRadius: '10px', whiteSpace: ' nowrap', width: 'fit-content' }}>
                         <div className="p-3">
                             <h1>{icon}</h1>
                             <p>{name}</p>

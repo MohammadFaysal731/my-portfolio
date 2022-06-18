@@ -20,6 +20,11 @@ import Influencer2 from '../images/projects-image/influencer-products.png'
 import Influencer3 from '../images/projects-image/influencer.png'
 import { FaRegEye } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
 const ProjectDetails = () => {
     const { id } = useParams();
 
@@ -80,9 +85,46 @@ const ProjectDetails = () => {
 
         },
     ]
+    // EvVGRqQ7PXAdCrZm
     return (
-        <section className='container pt-5'>
+        <section className='container pt-5 user-select-none'>
+            <div class="row row-cols-1 row-cols-md-1 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <div style={{ backgroundColor: '#0A0826', color: 'white' }}>
+                            <Swiper
+                                effect={"cube"}
+                                grabCursor={true}
+                                cubeEffect={{
+                                    shadow: true,
+                                    slideShadows: true,
+                                    shadowOffset: 20,
+                                    shadowScale: 0.94,
+                                }}
+                                pagination={true}
+                                modules={[EffectCube, Pagination]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <img src={Strong1} alt="" style={{ width: '400px', height: '400px' }} className='w-100' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Strong2} alt="" style={{ width: '400px', height: '400px' }} className='w-100' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Strong3} alt="" style={{ width: '400px', height: '400px' }} className='w-100' />
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'white' }}>
 
+                            <h5 class="card-title">Storange Gym</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section >
     );
 };

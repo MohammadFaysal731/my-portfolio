@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 
     return (
-        <Navbar collapseOnSelect expand="lg" sticky="top" style={{ backgroundColor: 'rgba(80, 100, 150, 1)' }} variant="dark" >
+        <Navbar
+            data-aos="fade-down"
+            data-aos-delay="70"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            collapseOnSelect expand="lg" sticky="top" style={{ backgroundColor: 'rgba(80, 100, 150, 1)' }} variant="dark" >
             <Container>
                 <Navbar.Brand to="#home"><SiChainlink />Mohammad Faysal<SiChainlink /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
