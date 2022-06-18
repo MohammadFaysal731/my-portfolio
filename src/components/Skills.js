@@ -112,7 +112,7 @@ const Skills = () => {
             </div>
             <div className="row">
                 {
-                    skills.map(({ icon, name, detail }) => <article
+                    skills.map(({ icon, name, detail }, index) => <article key={index}
                         data-aos="flip-down"
                         data-aos-delay="1500"
                         data-aos-duration="2500"

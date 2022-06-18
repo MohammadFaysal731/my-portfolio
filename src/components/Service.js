@@ -48,18 +48,18 @@ const Services = () => {
                     data-aos-easing="ease-in-out"
                     style={{ color: 'rgba(255, 255, 255, 0.6)' }}>What I Offer</h5>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
                 {
                     services.map(({ icon, name, description }, index) => <div
                         data-aos="flip-up"
                         data-aos-delay="2000"
                         data-aos-duration="2500"
                         data-aos-easing="ease-in-out"
-                        key={index} class="col">
-                        <div class="card">
-                            <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                                <h5 class="card-title" style={{ color: 'rgba(77, 181, 255, 1)' }}>{name} {icon}</h5>
-                                <p class="card-text">{description}</p>
+                        key={index} className="col">
+                        <div className="card">
+                            <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                <h5 className="card-title" style={{ color: 'rgba(77, 181, 255, 1)' }}>{name} {icon}</h5>
+                                <p className="card-text">{description}</p>
                             </div>
                         </div>
                     </div>)

@@ -23,9 +23,9 @@ const ProjectDetails = () => {
     }, [id]);
     return (
         <section className='container pt-5 user-select-none'>
-            <div class="row row-cols-1 row-cols-md-1 g-4 ">
-                <div class="col">
-                    <div class="card">
+            <div className="row row-cols-1 row-cols-md-1 g-4 ">
+                <div className="col">
+                    <div className="card">
                         <div style={{
                             backgroundColor: '#0A0826', color: 'rgba(77, 181, 255, 1)'
                         }}>
@@ -53,9 +53,9 @@ const ProjectDetails = () => {
                                 </SwiperSlide>
                             </Swiper>
                         </div>
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(77, 181, 255, 1)' }}>
+                        <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(77, 181, 255, 1)' }}>
                             <h5 style={{ color: 'rgba(77, 181, 255, 1)' }}>{project?.name}</h5>
-                            <div class="card-text" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
+                            <div className="card-text" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                                 <article>
                                     Technology:
                                     <p style={{ color: 'rgba(77, 181, 255, 1)' }}>{project?.technology}</p>

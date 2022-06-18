@@ -18,21 +18,21 @@ const About = () => {
                     data-aos-easing="ease-in-out"
                     style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Get To Know</h5>
             </div>
-            <div class="row m-3" >
+            <div className="row m-3" >
                 <div
                     data-aos="fade-up"
                     data-aos-delay="2000"
                     data-aos-duration="2500"
                     data-aos-easing="ease-in-out"
-                    class="col-sm-6 col-md-6">
-                    <img src={Me} class="img-fluid rounded-circle p-5" alt="..." style={{ width: '500px', height: '500px' }} />
+                    className="col-sm-6 col-md-6">
+                    <img src={Me} className="img-fluid rounded-circle p-5" alt="..." style={{ width: '500px', height: '500px' }} />
                 </div>
                 <div
                     data-aos="fade-down"
                     data-aos-delay="2800"
                     data-aos-duration="3000"
                     data-aos-easing="ease-in-out"
-                    class="col-sm-6 col-md-6">
+                    className="col-sm-6 col-md-6">
                     <blockquote
                     >
                         I am a student of Government Tolaram College. I am learning about web development and I am finishing my professional web development course. Now I am a web developer. I'm passionate about web development. I know about web development. My skills in web development I know  #HTML #CSS # JavaScript #ES6 #Bootstrap #React-Bootstrap #Tailwind and daisyui #React #React-Router #Firebase #NodeJS #Express #MongoDB.

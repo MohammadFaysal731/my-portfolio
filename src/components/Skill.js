@@ -80,16 +80,16 @@ const Skill = () => {
                     data-aos-easing="ease-in-out"
                     style={{ color: 'rgba(255, 255, 255, 0.6)' }}>What Skill I Have</h5>
             </div>
-            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+            <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-4" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
                 <div
                     data-aos="fade-down-right"
                     data-aos-delay="1500"
                     data-aos-duration="2000"
                     data-aos-easing="ease-in-out"
-                    class="col">
-                    <div class="card border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} >
-                            <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Frontend Development</h5>
+                    className="col">
+                    <div className="card border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                        <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} >
+                            <h5 className="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Frontend Development</h5>
                             <div className="row">
                                 {
                                     frontEnd.map(({ icon, name, detail }, index) => <article
@@ -122,10 +122,10 @@ const Skill = () => {
                     data-aos-delay="2000"
                     data-aos-duration="2500"
                     data-aos-easing="ease-in-out"
-                    class="col">
-                    <div class="card border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                        <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                            <h5 class="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Backend Development</h5>
+                    className="col">
+                    <div className="card border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                        <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                            <h5 className="card-title text-center" style={{ color: 'rgba(77, 181, 255, 1)' }}>Backend Development</h5>
                             <div className="row">
                                 {
                                     backend.map(({ icon, name, detail }, index) => <article

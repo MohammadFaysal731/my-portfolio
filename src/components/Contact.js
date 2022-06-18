@@ -33,13 +33,13 @@ const Contact = () => {
                     data-aos-easing="ease-in-out"
                     style={{ color: 'rgba(255, 255, 255, 0.6)' }}>Get In Touch</h5>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col"
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+                <div className="col"
                     data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine"
                 >
-                    <div class="card"
+                    <div className="card"
                         data-aos="fade-right"
                         data-aos-delay="1500"
                         data-aos-duration="1700"
@@ -47,26 +47,26 @@ const Contact = () => {
                     >
                         <form
                             onSubmit={sendEmail} ref={form} style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} className='p-4'>
-                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Full Name" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} required autoComplete='off' />
+                            <input type="text" name="name" className="form-control" id="exampleFormControlInput1" placeholder="Your Full Name" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} required autoComplete='off' />
                             <br />
-                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Eamil" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} required autoComplete='off' />
+                            <input type="email" name="email" className="form-control" id="exampleFormControlInput1" placeholder="Your Eamil" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} required autoComplete='off' />
                             <br />
-                            <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} placeholder="Your Message" required autoComplete='off'></textarea>
+                            <textarea className="form-control" name='message' id="exampleFormControlTextarea1" rows="3" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }} placeholder="Your Message" required autoComplete='off'></textarea>
                             <br />
                             <button type="submit" className='btn' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Send Messages</button>
                         </form>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                        <div class="card-body">
+                <div className="col">
+                    <div className="card" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                        <div className="card-body">
                             <div
                                 data-aos="fade-down"
                                 data-aos-delay="1300"
                                 data-aos-duration="1500"
                                 data-aos-easing="ease-in-out"
-                                class="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                                <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                className="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
                                     <div style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                                         <h1><SiMinutemailer className='contact-option-icon'></SiMinutemailer></h1>
                                         <h4>Email</h4>
@@ -80,8 +80,8 @@ const Contact = () => {
                                 data-aos-delay="1000"
                                 data-aos-duration="1300"
                                 data-aos-easing="ease-in-out"
-                                class="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                                <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                className="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
                                     <div style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                                         <h1><BsMessenger className='contact-option-icon'></BsMessenger></h1>
                                         <h4>Messenger</h4>
@@ -94,8 +94,8 @@ const Contact = () => {
                                 data-aos="fade-down"
                                 data-aos-delay="60"
                                 data-aos-duration="1000"
-                                class="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
-                                <div class="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                className="card mb-3 border" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
+                                <div className="card-body" style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)' }}>
                                     <div data-aos-easing="ease-in-out" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>
                                         <h1><BsWhatsapp className='contact-option-icon'></BsWhatsapp></h1>
                                         <h4>WhatsApp</h4>
