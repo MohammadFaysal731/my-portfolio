@@ -31,7 +31,7 @@ const Contact = () => {
                             <br />
                             <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Eamil" style={{ backgroundColor: '#0A0826', color: 'white' }} required />
                             <br />
-                            <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" style={{ backgroundColor: '#0A0826', color: 'white' }} required></textarea>
+                            <textarea class="form-control" name='message' id="exampleFormControlTextarea1" rows="3" style={{ backgroundColor: '#0A0826', color: 'white' }} placeholder="Your Message" required></textarea>
                             <br />
                             <button type="submit" className='btn' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Send Messages</button>
                         </form>

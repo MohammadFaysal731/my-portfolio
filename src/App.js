@@ -12,6 +12,7 @@ import Service from "./components/Service";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
+import ProjectDetails from './components/ProjectDetails';
 function App() {
   useEffect(() => {
     AOS.init();
@@ -25,6 +26,7 @@ function App() {
         <Route path='/skills' element={<Skills></Skills>}></Route>
         <Route path='/service' element={<Service></Service>}></Route>
         <Route path='/project' element={<Project></Project>}></Route>
+        <Route path='/project/:id' element={<ProjectDetails></ProjectDetails>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
       <Footer></Footer>
