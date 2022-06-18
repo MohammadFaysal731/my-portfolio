@@ -1,4 +1,4 @@
- [
+[
     {
         "id":1,
         "name": "STRONG GYM",
@@ -8,7 +8,10 @@
         "github":"https://github.com/MohammadFaysal731/independent-service-provider-a10",
         "live":"https://independent-service-prov-f1a49.web.app/",
         "technology": "> React > Firebase > React-Firebase-Hooks  > React-hook-form > JavaScript > React-toastify >React icons",
-        "framework":"> React-Bootstrap"
+        "framework":"> React-Bootstrap",
+        "features":"● This website is an independent service provider ● Different types of logging systems are available on this website ● This website has a protected route ● this website is fully responsive for table and mobile."
+      
+        
     },
     {
         "id":2,
@@ -19,7 +22,8 @@
         "github":"https://github.com/MohammadFaysal731/cap-calactions-a8",
         "live":"https://cap-collection.netlify.app/" ,
         "technology": "> React > React icons",
-        "framework": "HTML > CSS > JavaScript"
+        "framework": "HTML > CSS > JavaScript",
+        "features":"● This website is a Caps Collection ● user can add cap to cart ● user can delete there caps ● this website is responsive for and mobile."
     },
     {
         "id":3,
@@ -30,7 +34,8 @@
         "github":"https://github.com/MohammadFaysal731/pick-your-phone-a6",
         "live":"https://pick-your-phone-on-you-buzzet.netlify.app/",
         "technology":"> HTML > JavaScript > API Call",
-        "framework":"> Bootstrap"
+        "framework":"> Bootstrap",
+        "features":"● This website is Pic A Phone On Your Buzzet ● user can find there phone ● user can delete there caps ● this website is fully responsive for table and mobile."
     },
     {
         "id":4,
@@ -41,7 +46,8 @@
         "github":"https://github.com/MohammadFaysal731/calculalte-my-monthly-income-a5",
         "live":"https://calculate-my-monthly-income.netlify.app/",
         "technology":"> HTML > CSS > JavaScript",
-        "framework":"> Bootstrap"
+        "framework":"> Bootstrap",
+        "features":"● This website Calculates Monthly Income and expenditure calculations ● user can also can save there mony ● user can delete there caps ● this website is responsive for table and mobile."
     },
     {
         "id":5,
@@ -52,7 +58,8 @@
         "github":"https://github.com/MohammadFaysal731/convention-center-a3",
         "live":"https://pedantic-wozniak-894080.netlify.app/",
         "technology":"> HTML > FontAwesome",
-        "framework": "> Bootstrap"
+        "framework": "> Bootstrap",
+        "features":"● This website is a Convention Center it has many kinds of packages ● It has a form for booking the Convention Center user can booking only ● user can also asked questions about the Convention Center services ● this website is responsive for table and mobile."
     },
     {
         "id":6,
@@ -63,7 +70,8 @@
         "github":"https://github.com/MohammadFaysal731/influencer-products-a2",
         "live":"https://influncerproducts-vainla-css.netlify.app/",
         "technology":"> HTML > CSS > FontAwesome",
-        "framework":"> "
+        "framework":"> ",
+        "features":"● This website is a Influencer products ● user can there favorite product on this website ● this website have product section  ● his website is responsive for table and mobile."
 
     }
 ]

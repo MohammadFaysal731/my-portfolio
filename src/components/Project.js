@@ -9,7 +9,7 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('project.json')
+        fetch('https://arcane-earth-94091.herokuapp.com/project')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -36,8 +36,8 @@ const Project = () => {
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4" >
                 {
-                    projects.map(({ id, image1, image2, image3, name, github, live, technology, framework }) => <div
-                        key={id} class="col"
+                    projects.map(({ _id, image1, image2, image3, name, github, live, technology, framework }) => <div
+                        key={_id} class="col"
                         data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2500"
@@ -80,7 +80,7 @@ const Project = () => {
                                 <div className="d-flex justify-content-between align-items-center">
                                     <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Github <a href={github} target="_blank"><BsGithub style={{ color: 'rgba(77, 181, 255, 1)' }}></BsGithub></a></p>
                                     <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Live <a href={live} target="_blank"><FaRegEye style={{ color: 'rgba(77, 181, 255, 1)' }}></FaRegEye></a></p>
-                                    <button onClick={() => handleDetail(id)} className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</button >
+                                    <button onClick={() => handleDetail(_id)} className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</button >
                                 </div>
                             </div>
                         </div>
