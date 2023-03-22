@@ -1,15 +1,14 @@
-import React from 'react';
-import { FaRegEye } from 'react-icons/fa'
-import { BsGithub } from 'react-icons/bs'
+import React, { useEffect, useState } from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { FaRegEye } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 const Project = () => {
     const [projects, setProjects] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('https://arcane-earth-94091.herokuapp.com/project')
+        fetch('https://my-portfolio-server-kohl.vercel.app/project')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
@@ -78,8 +77,8 @@ const Project = () => {
                                     </article>
                                 </div>
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Github <a href={github} target="_blank"><BsGithub style={{ color: 'rgba(77, 181, 255, 1)' }}></BsGithub></a></p>
-                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Live <a href={live} target="_blank"><FaRegEye style={{ color: 'rgba(77, 181, 255, 1)' }}></FaRegEye></a></p>
+                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Github <a href={github} target="_blank" rel="noreferrer"><BsGithub style={{ color: 'rgba(77, 181, 255, 1)' }}></BsGithub></a></p>
+                                    <p style={{ color: 'rgba(77, 181, 255, 1)' }}>Live <a href={live} target="_blank" rel="noreferrer"><FaRegEye style={{ color: 'rgba(77, 181, 255, 1)' }}></FaRegEye></a></p>
                                     <button onClick={() => handleDetail(_id)} className='btn rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Details</button >
                                 </div>
                             </div>
