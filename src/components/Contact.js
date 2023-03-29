@@ -1,19 +1,28 @@
+import emailjs from 'emailjs-com';
 import React, { useRef } from 'react';
-import { SiMinutemailer } from 'react-icons/si'
-import { BsMessenger, BsWhatsapp } from 'react-icons/bs'
-import emailjs from 'emailjs-com'
+import { BsMessenger, BsWhatsapp } from 'react-icons/bs';
+import { SiMinutemailer } from 'react-icons/si';
 const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_2r22ass', 'template_l0i91px', form.current, 'pB-OjZw0SnNtzlaKV')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        emailjs
+          .sendForm(
+            "service_jeam1rd",
+            "template_oy86bs8",
+            form.current,
+            "pB-OjZw0SnNtzlaKV"
+          )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
         e.target.reset();
     };
 
@@ -72,7 +81,7 @@ const Contact = () => {
                                         <h4>Email</h4>
                                         <h5>www.faysal731@gmail.com</h5>
                                     </div>
-                                    <a href="mailto:www.faysal731@gmail.com" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }}>Send a message</a>
+                                    <a href="mailto:www.faysal731@gmail.com" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer">Send a message</a>
                                 </div>
                             </div>
                             <div
@@ -87,7 +96,7 @@ const Contact = () => {
                                         <h4>Messenger</h4>
                                         <h5 >Mohammad Faysal</h5>
                                     </div>
-                                    <a href="https://m.me/profile.php?id=100045990253742" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }}>Send a message</a>
+                                    <a href="https://m.me/profile.php?id=100045990253742" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer">Send a message</a>
                                 </div>
                             </div>
                             <div
@@ -101,7 +110,7 @@ const Contact = () => {
                                         <h4>WhatsApp</h4>
                                         <h5>+8801753730986</h5>
                                     </div>
-                                    <a href="https://api.whatsapp.com/send?phone=+88001753730986" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }}>Send a message</a>
+                                    <a href="https://api.whatsapp.com/send?phone=+88001753730986" target="_blank" className='text-decoration-none' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer">Send a message</a>
                                 </div>
                             </div>
                         </div>

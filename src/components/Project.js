@@ -8,9 +8,11 @@ const Project = () => {
     const [projects, setProjects] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('https://my-portfolio-server-kohl.vercel.app/project')
-            .then(res => res.json())
-            .then(data => setProjects(data))
+        fetch(
+          "https://my-portfolio-server-production-3607.up.railway.app/project"
+        )
+          .then((res) => res.json())
+          .then((data) => setProjects(data));
     }, [])
 
     const handleDetail = id => {

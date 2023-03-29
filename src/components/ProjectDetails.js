@@ -13,9 +13,11 @@ const ProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState({});
     useEffect(() => {
-        fetch(`https://my-portfolio-server-kohl.vercel.app/project/${id}`)
-            .then(res => res.json())
-            .then(data => setProject(data))
+        fetch(
+          `https://my-portfolio-server-production-3607.up.railway.app/project/${id}`
+        )
+          .then((res) => res.json())
+          .then((data) => setProject(data));
     }, [id]);
     return (
         <section className='container pt-5 user-select-none'>
