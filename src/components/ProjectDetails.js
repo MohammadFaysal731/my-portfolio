@@ -14,7 +14,7 @@ const ProjectDetails = () => {
     const [project, setProject] = useState({});
     useEffect(() => {
         fetch(
-          `https://my-portfolio-server-production-3607.up.railway.app/project/${id}`
+          `https://precious-crab-jumpsuit.cyclic.app/project/${id}`
         )
           .then((res) => res.json())
           .then((data) => setProject(data));
