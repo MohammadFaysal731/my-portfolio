@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ME from '../images/my-image/me.png'
 import { AiFillTwitterCircle } from 'react-icons/ai';
-import { BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { BsFacebook, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import ME from '../images/my-image/me-2.png';
 const Banner = () => {
     const { text } = useTypewriter({
         words: ['Front End Developer', 'Web Developer', 'React Developer', 'Meran Stack Developer'],
@@ -43,7 +43,7 @@ const Banner = () => {
                     data-aos-delay="2500"
                     data-aos-duration="3000"
                     data-aos-easing="ease-in-out"
-                    href='https://drive.google.com/file/d/1oMrNYXOR1dGSrVBHNwEP7_3BzrfAH1GC/view?usp=sharing' download target='_blank' className='btn  rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }}>Download Resume</a>
+                    href='https://drive.google.com/file/d/1oMrNYXOR1dGSrVBHNwEP7_3BzrfAH1GC/view?usp=sharing' download target='_blank' className='btn  rounded' style={{ backgroundColor: '#0A0826', color: 'rgba(255, 255, 255, 0.6)', border: '1px solid rgba(77, 181, 255, 1)' }} rel="noreferrer">Download Resume</a>
             </div>
             <div
                 data-aos="zoom-in"
@@ -51,10 +51,10 @@ const Banner = () => {
                 data-aos-duration="3000"
                 data-aos-easing="ease-in-out"
                 className="d-flex justify-content-center m-3">
-                <a href="https://linkedin.com" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }}><BsLinkedin></BsLinkedin></a>
-                <a href="https://github.com/MohammadFaysal731" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }}><BsGithub></BsGithub></a>
-                <a href="https://www.facebook.com" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }}><BsFacebook></BsFacebook></a>
-                <a href="https://twitter.com/home" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }}><AiFillTwitterCircle></AiFillTwitterCircle></a>
+                <a href="https://linkedin.com" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer"><BsLinkedin></BsLinkedin></a>
+                <a href="https://github.com/MohammadFaysal731" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer"><BsGithub></BsGithub></a>
+                <a href="https://www.facebook.com" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer"><BsFacebook></BsFacebook></a>
+                <a href="https://twitter.com/home" target="_blank" className='m-2' style={{ color: 'rgba(77, 181, 255, 1)' }} rel="noreferrer"><AiFillTwitterCircle></AiFillTwitterCircle></a>
             </div>
             <div className="d-flex justify-content-center mt-3 ">
                 <img
@@ -62,9 +62,8 @@ const Banner = () => {
                     data-aos-delay="2500"
                     data-aos-duration="3000"
                     data-aos-easing="ease-in-out"
-                    src={ME} alt="" className=' rounded-circle' style={{ width: '500px', height: '500px', border: '1px solid rgba(77, 181, 255, 1)' }} />
+                    src={ME} alt="" />
             </div>
-
         </section >
     );
 };
