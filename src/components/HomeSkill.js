@@ -1,12 +1,11 @@
 import React from 'react';
-import { DiCss3 } from 'react-icons/di'
-import { AiOutlineHtml5 } from 'react-icons/ai'
-import { TbBrandJavascript, TbBrandTailwind } from 'react-icons/tb'
-import { SiBootstrap, SiMongodb, SiExpress } from 'react-icons/si'
-import { FaReacteurope } from 'react-icons/fa'
-import { DiNodejs } from 'react-icons/di'
+import { AiOutlineHtml5 } from 'react-icons/ai';
+import { DiCss3, DiNodejs } from 'react-icons/di';
+import { FaReacteurope } from 'react-icons/fa';
+import { SiBootstrap, SiExpress, SiMongodb } from 'react-icons/si';
+import { TbBrandJavascript, TbBrandTailwind } from 'react-icons/tb';
 import { useNavigate } from 'react-router-dom';
-const Skill = () => {
+const HomeSkill = () => {
     const navigate = useNavigate()
 
     const handelSkills = () => {
@@ -151,4 +150,4 @@ const Skill = () => {
     );
 };
 
-export default Skill;
+export default HomeSkill;
